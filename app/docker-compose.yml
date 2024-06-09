@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  react:
+    build:
+      context: .
+      dockerfile: ./frontend/docker/Dockerfile
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./capture-media-app:/app
+    command: npm dev
