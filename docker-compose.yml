@@ -4,7 +4,7 @@ services:
   react:
     build:
       context: .
-      dockerfile: ./frontend/docker/Dockerfile
+      dockerfile: ./capture-media-app/docker/Dockerfile
     ports:
       - "3001:3000"
     volumes:
